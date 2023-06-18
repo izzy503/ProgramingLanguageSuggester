@@ -58,6 +58,10 @@ License
 
 This project is licensed under the (https://opensource.org/licenses/BSD-2-Clause) 
 
+{Any issues or concerns please contact mne at ipadilla2280@gmail.com.}
 
-Please note that this is just a sample `README.md` file, and you may need to modify it further to suit your specific project and requirements.
+Copyright (c) 18 june 2023_Israel Padilla
+
+
+Please note that this is just a sample `README.md` file, for my project and you may need to be modified to further to suit your specific project and requirements.
 
