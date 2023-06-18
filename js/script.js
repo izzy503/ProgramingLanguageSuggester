@@ -1,25 +1,35 @@
-function suggestLanguage(answers) {
-    const q1 = answers.q1;
-    const q2 = answers.q2;
-    const q3 = answers.q3;
-    const q4 = answers.q4;
-    const q5 = answers.q5;
-}
-
-const suggestions = {
-    static_dynamic: "Python",
-    static_web_performance: "C#",
-    static_web_simplicity: "Ruby",
-    static_no: "Rust",
-    dynamic_web: "JavaScript",
-    dynamic_no: "Go",
-    dynamic_mobile: "Swift"
-  };
-
-  const key = q1 + "_" + q2 + "_" + q3 + "_" + q4 + "_" + q5;
-
+document.getElementById('surveyForm').addEventListener('submit', function(event) {
+    event.preventDefault();
   
-  const language = suggestions[key];
-
- 
-  document.getElementById("result").textContent =
+    var q1 = document.getElementById('q1').value;
+    var q2 = document.getElementById('q2').value;
+    var q3 = document.getElementById('q3').value;
+    var q4 = document.getElementById('q4').value;
+    var q5 = document.getElementById('q5').value;
+  
+    var resultElement = document.getElementById('result');
+    resultElement.innerHTML = '';
+  
+    var language = suggestLanguage(q1, q2, q3, q4, q5);
+  
+    var result = "Based on your answers, we suggest using " + language + " programming language.";
+    resultElement.innerHTML = result;
+  });
+  
+  function suggestLanguage(q1, q2, q3, q4, q5) {
+    var suggestions = {
+      "static_yes_performance_yes_yes": "Go",
+      "dynamic_yes_simplicity_yes_yes": "Python",
+      "static_yes_simplicity_yes_no": "Ruby",
+      "dynamic_no_performance_no_no": "Rust"
+    };
+  
+    var key = q1 + "_" + q2 + "_" + q3 + "_" + q4 + "_" + q5;
+    
+    if (suggestions.hasOwnProperty(key)) {
+      return suggestions[key];
+    } else {
+      return "JavaScript";
+    }
+  }
+  
