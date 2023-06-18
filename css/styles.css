@@ -1,6 +1,14 @@
-container {
+body {
+    background-image: url('project2/images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
     max-width: 400px;
     margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
   }
   
   .mt-3 {
@@ -40,8 +48,6 @@ container {
   .result-text {
     margin-top: 1.5rem;
   }
-  
-  
   
   
   
