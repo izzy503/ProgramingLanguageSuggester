@@ -1,3 +1,5 @@
+# Author Israel E Padilla
+
 # Programming Language Suggester
 
 This is a simple web application that suggests a programming language based on your answers to a set of questions. It helps you identify the most suitable programming language based on your preferences and interests.
@@ -7,12 +9,20 @@ This is a simple web application that suggests a programming language based on y
 - Answer a set of questions about your programming language preferences.
 - Get a suggested programming language based on your answers.
 
+## Technologies Used
+
+ -Visual Studio 
+ -Github
+ -HTML
+ -CSS
+ -JavaScript
+
 ## Usage
 
-1. Clone the repository:
+Clone the repository:
 
-   ```shell
-   git clone https://github.com/your-username/programming-language-suggester.git
+    git clone https://github.com/izzy503/ProgramingLanguageSuggester
+
 1.Open the index.html file in your web browser.
 2.Answer the questions in the form.
 3.Click the "Submit" button.
