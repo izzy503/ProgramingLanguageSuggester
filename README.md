@@ -19,6 +19,10 @@ This is a simple web application that suggests a programming language based on y
 
 ## Usage
 
+## KnownBugs
+
+-None found
+
 Clone the repository:
 
     git clone https://github.com/izzy503/ProgramingLanguageSuggester
